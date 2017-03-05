@@ -27,7 +27,8 @@ def get_links(a_str):
 
 	   print (a_str[urlstart +1  :urlend - 1 ]) #prints url out
 	   start += len(sub)
-                
-
-html = read_Website("http://python.org/")
+              
+##url = "http://python.org/"      # debug
+url = input("Url:")
+html = read_Website(url)
 get_links(html)
